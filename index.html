@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Class - Monte Hermoso</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/f3d8d67f50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="imagenes/logo3.png" alt="Logo">
+            </div>
+            <button class="menu-btn">
+                <span class="menu-icon"></span>
+            </button>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="inicio">
+        <h2>Encontra la mejor opcion de alojamiento para tus vacaciones</h2>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="opciones"><i class="fa-solid fa-location-dot"></i> Zona:</label>
+                <select id="opciones" name="opciones">
+                    <option value="opcionall">Todas</option>
+                    <option value="sauce_grande">Sauce Grande</option>
+                    <option value="monte_del_este">Monte del Este</option>
+                    <option value="centro_mh">Centro</option>
+                    <option value="dufour">Dufour</option>
+                    <option value="las_dunas">Las Dunas</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="check-in"><i class="fa-solid fa-door-open"></i> Check In:</label>
+                <input type="date" id="check-in" name="check-in">
+            </div>
+            <div class="form-group">
+                <label for="check-out"><i class="fa-solid fa-door-closed"></i> Check Out:</label>
+                <input type="date" id="check-out" name="check-out">
+            </div>
+            <div class="form-group">
+                <label for="num-personas"><i class="fa-solid fa-users"></i> Cantidad de Personas:</label>
+                <div class="input-group">
+                    <input type="number" id="num-personas" name="num-personas" min="1" max="10">
+                    <span class="personas-label">personas</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Buscar Alojamiento</button>
+        </div>
+    </section>
+    
+    <!-- SECCION DE CASAS PREMIUM -->
+
+    <section id="catalogo">
+        <h2>Mejores opciones para ti</h2>
+        <div class="catalogo-container">
+          <div class="carrusel">
+            <a href="detalle-casa1.html" class="casa-link">
+              <div class="casa">
+                <img src="imagenes/casa1.jpg" alt="Casa 1">
+                <h3>Casa 1</h3>
+                <p>Dormitorios: 3</p>
+                <p>Baños: 2</p>
+                <!-- Otra información de la casa -->
+              </div>
+            </a>
+            <!-- Repite lo mismo para otras casas -->
+            <a href="detalle-casa1.html" class="casa-link">
+              <div class="casa">
+                <img src="imagenes/casa1.jpg" alt="Casa 1">
+                <h3>Casa 1</h3>
+                <p>Dormitorios: 3</p>
+                <p>Baños: 2</p>
+                <!-- Otra información de la casa -->
+              </div>
+            </a>
+            <a href="detalle-casa1.html" class="casa-link">
+              <div class="casa">
+                <img src="imagenes/casa1.jpg" alt="Casa 1">
+                <h3>Casa 1</h3>
+                <p>Dormitorios: 3</p>
+                <p>Baños: 2</p>
+                <!-- Otra información de la casa -->
+              </div>
+            </a> 
+          </div>
+        </div>
+      </section>
+      
+      <section id="video">
+        <h2>¿No conoces Monte Hermoso?</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8col6yrgPNU" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-section">
+            <h3><i class="fa-solid fa-bullhorn"></i> Lo que necesitas saber</h3>
+            <a href="#">Informacion 1</a>
+            <a href="#">Informacion 2</a>
+            <a href="#">Informacion 3</a>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fa-solid fa-credit-card"></i> Acerca de pagos</h3>
+            <a href="#">Informacion 1</a>
+            <a href="#">Informacion 2</a>
+            <a href="#">Informacion 3</a>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fa-solid fa-phone"></i> Contactanos</h3>
+            <a href="https://wa.me/5492914277022" target="_blank">(+54) 9 291 427-7022</a>
+            <a href="#">Informacion 2</a>
+            <a href="#">Informacion 3</a>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

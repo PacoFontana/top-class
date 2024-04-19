@@ -1,0 +1,307 @@
+/* Estilos generales */
+
+/* Estilos para la imagen de fondo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
+
+/* Estilos para la parte superior del sitio */
+header {
+    background-color: #0000ff;
+    padding: 10px 0;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    height: 70px;
+    margin-left: 20px;
+}
+
+/* Estilos para el botón del menú */
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilos para el icono del menú (hamburguesa) */
+.menu-icon {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+}
+
+/* Estilos para las líneas del icono del menú */
+.menu-icon:before,
+.menu-icon:after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.menu-icon:before {
+    top: -10px;
+}
+
+.menu-icon:after {
+    top: 10px;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+    display: none;
+    position: fixed; /* Para mantener el menú fijo en su posición */
+    top: 70px; /* Ajustar según la altura de la barra de navegación */
+    left: 0;
+    width: 100%;
+    background-color: #0000ff;
+    z-index: 99999; /* Colocar el menú por encima de todo el contenido */
+}
+
+/* Ajustar el resto del contenido debajo del menú desplegado */
+body.menu-open {
+    padding-top: 120px; /* Ajustar según la altura del menú desplegado */
+}
+
+/* Estilos para la lista de opciones del menú */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para cada elemento de la lista del menú */
+.menu ul li {
+    padding: 10px 20px;
+}
+
+/* Estilos para los enlaces del menú */
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mostrar el menú cuando el botón recibe foco */
+.menu-btn:focus + .menu {
+    display: block;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para el formulario de búsqueda */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los grupos de formularios */
+.form-group {
+    margin: 0 10px;
+}
+
+/* Estilos para las etiquetas de los formularios */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada de datos */
+input[type="date"],
+input[type="number"] {
+    padding: 8px;
+    border: 2px solid #0000ff; /* Cambio en el tamaño del borde y el color */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilos para el campo de fecha */
+input[type="date"] {
+    width: 200px;
+}
+
+/* Estilos para el campo de número */
+input[type="number"] {
+    width: 80px;
+}
+
+/* Estilos cuando los campos de entrada de datos reciben foco */
+input[type="date"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #0000ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para el botón de búsqueda */
+.search-btn {
+    margin-top: 20px;
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos al pasar el ratón por encima del botón de búsqueda */
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input[type="number"] {
+    width: 100px; /* Ancho del campo de entrada */
+    padding-right: 90px; /* Espacio para el texto "personas" */
+}
+
+.personas-label {
+    position: absolute;
+    right: 370px; /* Espacio entre el número y el texto "personas" */
+    color: black; /* Color del texto "personas" */
+}
+
+/* Estilos para el menú de opciones */
+.menu select {
+    padding: 10px;
+    border: 2px solid #0000ff; /* Cambia el color del borde según tu preferencia */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #666; /* Color del texto */
+    background-color: white; /* Color de fondo */
+    -webkit-appearance: none; /* Elimina el estilo predeterminado de los navegadores webkit */
+    -moz-appearance: none; /* Elimina el estilo predeterminado de Firefox */
+    appearance: none; /* Elimina el estilo predeterminado */
+}
+
+/* Estilos cuando el menú de opciones recibe foco */
+.menu select:focus {
+    outline: none;
+    border-color: #0000ff; /* Cambia el color del borde cuando está en foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega una sombra al estar en foco */
+}
+
+/*A*/
+/* Estilos para el menú de opciones */
+.form-group select {
+    padding: 10px;
+    border: 2px solid #0000ff; /* Cambia el color del borde según tu preferencia */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #666; /* Color del texto */
+    background-color: white; /* Color de fondo */
+    -webkit-appearance: none; /* Elimina el estilo predeterminado de los navegadores webkit */
+    -moz-appearance: none; /* Elimina el estilo predeterminado de Firefox */
+    appearance: none; /* Elimina el estilo predeterminado */
+}
+
+/* Estilos cuando el menú de opciones recibe foco */
+.form-group select:focus {
+    outline: none;
+    border-color: #0000ff; /* Cambia el color del borde cuando está en foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega una sombra al estar en foco */
+}
+
+/*CATALOGO*/
+#catalogo {
+    margin-top: 100px;
+    background-color: #0000ff; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno para separar el contenido del borde */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  /* Estilos para el contenedor del carrusel */
+  .catalogo-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Habilita el desplazamiento lateral */
+    padding: 20px;
+  }
+  
+  .carrusel {
+    flex: 1;
+    display: flex;
+    /* Ajusta el tamaño y la apariencia según tu diseño */
+  }
+  
+  .casa {
+    width: 300px; /* Ancho fijo para cada casa */
+    background-color: #ffffff; /* Fondo blanco dentro del contorno */
+    border: 2px solid #ffffff; /* Contorno blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+    cursor: pointer; /* Cambiar el cursor a una mano al pasar sobre el botón */
+    margin: 0 10px; /* Espaciado horizontal entre casas */
+    color: #000000; /* Color de texto negro */
+  }
+  
+  .casa:hover {
+    background-color: #cccccc; /* Cambiar a un gris claro al pasar el cursor */
+  }
+  
+  .casa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+  }
+
+  /*FOOTER DE PAGINA*/
+  footer {
+    background-color: #0000ff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 30%; /* Ajusta el ancho de cada sección */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
