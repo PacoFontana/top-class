@@ -16,6 +16,9 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/f3d8d67f50.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -30,7 +33,7 @@
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#acerca">Acerca</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#fin-pag" class="smooth-scroll">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,29 +84,32 @@
           <div class="carrusel">
             <a href="detalle-casa1.html" class="casa-link">
               <div class="casa">
+                <div class="tipo-propiedad"><p><i class="fa-solid fa-building"> Departamento</i></p></div>
                 <img src="imagenes/casa1.jpg" alt="Casa 1">
-                <h3>Casa 1</h3>
-                <p>Dormitorios: 3</p>
-                <p>Baños: 2</p>
+                <h3><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></h3>
+                <p><i class="fa-solid fa-location-dot"></i> Monte del Este <i class="fa-solid fa-tree"></i></p>
+                <p><i class="fa-solid fa-bed"></i> Capacidad para 4</p>
                 <!-- Otra información de la casa -->
               </div>
             </a>
             <!-- Repite lo mismo para otras casas -->
             <a href="detalle-casa1.html" class="casa-link">
               <div class="casa">
+                <div class="tipo-propiedad"><p><i class="fa-solid fa-house"> Casa</i></p></div>
                 <img src="imagenes/casa1.jpg" alt="Casa 1">
-                <h3>Casa 1</h3>
-                <p>Dormitorios: 3</p>
-                <p>Baños: 2</p>
+                <h3><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h3>
+                <p><i class="fa-solid fa-location-dot"></i> Las Dunas <i class="fa-solid fa-tree"></i></p>
+                <p><i class="fa-solid fa-bed"></i> Capacidad para 6</p>
                 <!-- Otra información de la casa -->
               </div>
             </a>
             <a href="detalle-casa1.html" class="casa-link">
               <div class="casa">
+                <div class="tipo-propiedad"><p><i class="fa-solid fa-house"> Casa</i></p></div>
                 <img src="imagenes/casa1.jpg" alt="Casa 1">
-                <h3>Casa 1</h3>
-                <p>Dormitorios: 3</p>
-                <p>Baños: 2</p>
+                <h3><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></h3>
+                <p><i class="fa-solid fa-location-dot"></i> Centro <i class="fa-solid fa-umbrella-beach"></i></p>
+                <p><i class="fa-solid fa-bed"></i> Capacidad para 2</p>
                 <!-- Otra información de la casa -->
               </div>
             </a> 
@@ -115,32 +121,41 @@
       <section class="actividades" name="actividades">
         <h2>MONTE<br>HERMOSO<br>2024 <i class="fa-solid fa-calendar-days"></i></h2>
         <div class="actividad">
-            <h3><i class="fa-solid fa-umbrella-beach"></i> Playa</h3>
-            <p class="opcion"><i class="fa-solid fa-wind"></i> Sky Surf</p>
-            <p class="opcion">Malteadas</p>
-            <p class="opcion">Surf</p>
+            <h3><i class="fa-solid fa-ice-cream"></i>Carnaval</h3>
+            <p class="opcion">Febrero<br>10, 11, 12, 13</p>
+            <p class="opcion"></p>
+            <p class="opcion"></p>
         </div>
         <div class="actividad">
-            <h3><i class="fa-solid fa-truck-monster"></i> Medanos</h3>
-            <p class="opcion"><i class="fa-solid fa-motorcycle"></i> Offroad</p>
-            <p class="opcion"><i class="fa-solid fa-fish-fins"></i> Pesca</p>
-            <p class="opcion"><i class="fa-solid fa-ship"></i> Vehiculos Actuaticos</p>
+            <h3><i class="fa-solid fa-egg"></i>Semana Santa</h3>
+            <p class="opcion">Marzo<br>29, 30, 31, 1</p>
+            <p class="opcion"></p>
+            <p class="opcion"></p>
         </div>
         <div class="actividad">
-            <h3><i class="fa-solid fa-tree"></i> Turismo</h3>
-            <p class="opcion"><i class="fa-solid fa-building-columns"></i> Casino</p>
-            <p class="opcion"><i class="fa-solid fa-tent"></i> Acampar</p>
-            <p class="opcion"><i class="fa-solid fa-utensils"></i> Comida Marina</p>
+            <h3><i class="fa-solid fa-wind"></i> Primavera</h3>
+            <p class="opcion">Septiembre<br>21</p>
+            <p class="opcion"></p>
+            <p class="opcion"></p>
         </div>
         <div class="actividad">
-            <h3><i class="fa-solid fa-tree"></i> Turismo</h3>
-            <p class="opcion"><i class="fa-solid fa-building-columns"></i> Casino</p>
-            <p class="opcion"><i class="fa-solid fa-tent"></i> Acampar</p>
-            <p class="opcion"><i class="fa-solid fa-utensils"></i> Comida Marina</p>
+            <h3><i class="fa-solid fa-truck-monster"></i>Fiesta Enduro</h3>
+            <p class="opcion">OCTUBRE<br>13, 14, 15</p>
+            <p class="opcion"></p>
+            <p class="opcion"></p>
         </div>
+
     </section>   
 
+    <!--BOTON DE WHATSAPP-->
+    <div class="boton-fijo">
+        <a href="https://wa.me/5492914277022" target="_blank">
+        <img src="imagenes/whatsapp-logo.jpg" alt="Botón" class="boton-img"></a>
+      </div>
+
+      <!--FIN DE PAGINA-->
     
+    <div id="fin-pag">
     <footer>
         <div class="footer-section">
             <h3><i class="fa-solid fa-bullhorn"></i> Lo que necesitas saber</h3>
@@ -160,9 +175,7 @@
             <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i> topclass@gmail.com</a>
             <a href="#"><i class="fa-brands fa-facebook"></i> Top Class Oficial</a>
         </div>
-    </footer>
-
-    
+    </footer></div>  
 
     <script src="script.js"></script>
 

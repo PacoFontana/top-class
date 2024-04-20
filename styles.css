@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 50% -110px;
 }  
 
 /* Estilos para la parte superior del sitio */
@@ -269,13 +270,30 @@ input[type="number"]:focus {
   
   .casa:hover {
     background-color: #cccccc; /* Cambiar a un gris claro al pasar el cursor */
+
   }
   
   .casa img {
     width: 100%;
     height: auto;
     border-radius: 8px; /* Bordes redondeados para la imagen */
+
   }
+
+  .casa-link {
+    text-decoration: none !important;
+  }
+
+  .tipo-propiedad {
+    position: relative;
+    top: 15px;
+    right: 12px;
+    background-color: #0080ff;
+    border-radius: 100px;
+    padding: 1px 10px;
+    font-size: 15px;
+}
+
 
   /*FOOTER DE PAGINA*/
   footer {
@@ -288,6 +306,7 @@ input[type="number"]:focus {
 
 .footer-section {
     width: 30%; /* Ajusta el ancho de cada sección */
+    margin-left: 100px;
 }
 
 .footer-section h3 {
@@ -321,7 +340,7 @@ input[type="number"]:focus {
     color: #0000ff; /* Color azul */
     font-size: 36px; /* Tamaño del título */
     text-align: left;
-    margin-left: 50px;
+    margin-left: -35px;
     margin-top: 50px;
 }
 
@@ -329,7 +348,8 @@ input[type="number"]:focus {
     display: inline-block;
     vertical-align: top;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 
 .actividad h3 {
@@ -341,22 +361,22 @@ input[type="number"]:focus {
     color: #000000; /* Color negro */
 }
 
-/*CALENDARIO 2024*/
-#calendario {
-    text-align: center;
-}
-
-.calendar-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.fecha-festiva {
-    background-color: #ffc107;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-    width: 150px;
-}
+/*BOTON DE WHASTAPP*/
+.boton-fijo {
+    position: fixed;
+    bottom: 20px; /* Ajusta según la distancia que desees desde la parte inferior */
+    right: 20px; /* Ajusta según la distancia que desees desde la derecha */
+    width: 50px; /* Ajusta según el tamaño que desees para el botón */
+    height: 50px; /* Ajusta según el tamaño que desees para el botón */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    background-color: #fff; /* Color de fondo opcional */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra opcional */
+    z-index: 9999; /* Asegura que esté sobre otros elementos */
+  }
+  
+  .boton-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Asegura que la imagen sea completamente circular */
+  }
+  
